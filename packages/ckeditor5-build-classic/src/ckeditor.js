@@ -26,8 +26,19 @@
  import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar.js';
  import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformation.js';
  import TodoList from '@ckeditor/ckeditor5-list/src/todolist';
+ import Underline from '@ckeditor/ckeditor5-basic-styles/src/underline';
  
  class Editor extends ClassicEditor {}
+
+ function SpecialCharactersEmoji( editor ) {
+    editor.plugins.get( 'SpecialCharacters' ).addItems( 'Emoji', [
+        { title: 'smiley face', character: '😊' },
+        { title: 'rocket', character: '🚀' },
+        { title: 'wind blowing face', character: '🌬️' },
+        { title: 'floppy disk', character: '💾' },
+        { title: 'heart', character: '❤️' }
+    ] );
+}
  
  // Plugins to include in the build.
  Editor.builtinPlugins = [
@@ -53,7 +64,9 @@
 	 Table,
 	 TableToolbar,
 	 TextTransformation,
-	 TodoList
+	 TodoList,
+	 Underline,
+	 SpecialCharactersEmoji
  ];
  
  // Editor configuration.
@@ -62,6 +75,7 @@
 		 items: [
 			 'bold',
 			 'italic',
+			 'underline',
 			 'fontColor',
 			 '|',
 			 'bulletedList',
