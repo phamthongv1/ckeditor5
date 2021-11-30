@@ -140,7 +140,7 @@
   "bugs": "https://github.com/ckeditor/ckeditor5/issues",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ckeditor/ckeditor5.git"
+    "url": "https://github.com/phamthongv1/ckeditor5.git#stable"
   },
   "scripts": {
     "lint": "eslint --quiet '**/*.js' --format ./scripts/eslint-formatter.js",
