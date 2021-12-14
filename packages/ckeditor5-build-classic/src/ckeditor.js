@@ -160,18 +160,6 @@ Editor.defaultConfig = {
 		],
 	},
 	language: 'en',
-	image: {
-		toolbar: [
-			'imageStyle:inline',
-			'imageStyle:block',
-			'imageStyle:side',
-			'|',
-			'toggleImageCaption',
-		],
-	},
-	table: {
-		contentToolbar: ['tableColumn', 'tableRow', 'mergeTableCells'],
-	},
 	ckfinder: {
 		// Upload the images to the server using the CKFinder QuickUpload command.
 		uploadUrl:
